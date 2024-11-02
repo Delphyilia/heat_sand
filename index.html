@@ -1,36 +1,48 @@
 <main>
 <head>
-<title>
-    typstの記法紹介
-</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>typstの記法紹介</title>
+    <link rel="stylesheet" href="./main.css" />
 </head>
 
 <body>
+    <header class="page-header">
+        <div class="page-header__content">
+            <span class="page-header__text">熱砂のプログラミング日記</span>
+        </div>
+    </header>
 <div>
-typstという新しい組版ソフトウェアがあります。LaTexというのもありますが、あちらは歴史が長く、その分どの派生の何の関数を使用したらよいかわからなくなったりします。
-typstはそのあたりシンプルにできているので、新規にLaTexを学ぶぐらいならtypstの記法に慣れましょう。
+<p>typstという新しい組版ソフトウェアがあります。LaTexというのもありますが、あちらは歴史が長く、その分どの派生の何の関数を使用したらよいかわからなくなったりします。</p>
+<p>typstはそのあたりシンプルにできているので、新規にLaTexを学ぶぐらいならtypstの記法に慣れましょう。</p>
 
-typstの導入等は完了しているから、記法だけしりたいよ～という方は<a href="">こちら</a>。
+<p>typstの導入等は完了しているから、記法だけしりたいよ～という方は<a href="">こちら</a>。</p>
 
-なお、この記事はwindows使用者が読むことを想定しています。
+<p>なお、この記事はwindows使用者が読むことを想定しています。</p>
 </div>
 
 
 <div>
-    導入
+    <h2>導入</h2>
     スタートボタンにcmdと入力すると、コマンドプロンプトが開きます。
-    コマンドプロンプトでwinget install --id Typst.Typstと入力し、実行します。
+    コマンドプロンプトで次のコマンドを入力し、実行します。
+    <div class="code__content">
+        <span class="code__text">install --id Typst.Typst</span>
+    </div>
     完了したら、インストールされているか確認のためtypst -Vを実行しましょう。
     これを書いている時点（20241102）では以下のようにバージョンが表示されます。
-
-    C:\Users\might>typst -V
-    typst 0.11.1 (50115102)
+    <div class="code__content">
+    <span class="code__text">
+        <p>C:\Users\might>typst -V</p>
+        <p>0.11.1 (50115102)</p>
+    </span>
+    </div>
 
 </div>
 
 
 <div>
-    下準備
+    <h2>下準備</h2>
     筆者はエディタに<a href="https://code.visualstudio.com/">vscode</a>を使用しています。
     vscodeをインストールしたら、左端の拡張機能のボタン（画像の上から4番目）をクリックし、typstと入力して検索をかけましょう。
     <figure>
@@ -49,13 +61,15 @@ typstの導入等は完了しているから、記法だけしりたいよ～と
 </div>
 
 <div>
-    動作確認
+    <h2>動作確認</h2>
     では、動作を確認するためにHello Worldを書いていきましょう。
     デスクトップに（どこでもよいですが）「hello.typ」というファイルを作りましょう。
     vscodeで開き、次のように入力してみましょう。
     
-    Hello,world!
-    こんにちは、世界！
+    <div class="code__content">
+        <p>Hello,world!</p>
+        <p>こんにちは、世界！</p>
+    </div>
 
     入力できたら、画面右上のPDFと表示されたボタンをクリックしましょう。
     
@@ -78,9 +92,13 @@ typstの導入等は完了しているから、記法だけしりたいよ～と
 
     以上をまとめると、hello.typには次のように記述します。
 
-    #set text(lang:"ja", font: "MS Mincho")
-    Hello,world! \
-    こんにちは、世界！
+    <div class="code__content">
+        <span class="code__text">
+            <p>#set text(lang:"ja", font: "MS Mincho")</p>
+            <p>Hello,world! \</p>
+            <p>こんにちは、世界！</p>
+        </span>
+    </div>
 
     先程と同様に右上のPDFボタンをクリックし、PDFとして出力します。
 
@@ -94,7 +112,7 @@ typstの導入等は完了しているから、記法だけしりたいよ～と
 </div>
 
 <div>
-    終わりに
+    <h2>終わりに</h2>
     簡単ではありましたが、以上で紹介を終わります！
     typstは生まれたてなので日本語記事が少なく、検索もかけにくいですが、便利なものであるので、使いこなしていきましょう!
 
