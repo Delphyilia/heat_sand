@@ -1,0 +1,49 @@
+body {
+    background-color: #fff7cc;
+}
+
+
+h2 {
+    border-bottom: double 5px  #1f1e33;
+}
+
+.code__content {
+    background-color: #000; /* 背景を黒に設定 */
+    padding: 16px;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.code__text {
+    color: #fff; /* 文字色を白に設定 */
+    font-family: monospace; /* 等幅フォントを使用 */
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0; /* 行間の余白をゼロに */
+
+    p {
+        margin: 0; /* 個々の行の余白をゼロに */
+    }
+}
+
+
+.page-header {
+    background-color: #d7aaaa;
+    width: 100%;
+    display: block;
+    word-break: break-all;
+}
+
+.page-header__content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.page-header__text {
+    font-family: -apple-system, BlinkMacSystemFont, Work Sans, Hiragino Sans, ヒラギノ角ゴシック, Hiragino Kaku Gothic ProN, ヒラギノ角ゴ ProN W3, Verdana, Roboto, Droid Sans, メイリオ, Meiryo, ＭＳ Ｐゴシック, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #1f1e33;
+}
