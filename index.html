@@ -32,10 +32,10 @@
     完了したら、インストールされているか確認のためtypst -Vを実行しましょう。
     これを書いている時点（20241102）では以下のようにバージョンが表示されます。
     <div class="code__content">
-    <span class="code__text">
-        <p>C:\Users\might>typst -V</p>
-        <p>0.11.1 (50115102)</p>
-    </span>
+        <span class="code__text" id="codeText">
+            C:\Users\might>typst -V
+            0.11.1 (50115102)
+        </span>
     </div>
 
 </div>
@@ -67,8 +67,10 @@
     vscodeで開き、次のように入力してみましょう。
     
     <div class="code__content">
-        <p>Hello,world!</p>
-        <p>こんにちは、世界！</p>
+        <span class="code__text" id="codeText">
+            Hello,world!
+            こんにちは、世界！
+        </span>
     </div>
 
     入力できたら、画面右上のPDFと表示されたボタンをクリックしましょう。
@@ -93,10 +95,10 @@
     以上をまとめると、hello.typには次のように記述します。
 
     <div class="code__content">
-        <span class="code__text">
-            <p>#set text(lang:"ja", font: "MS Mincho")</p>
-            <p>Hello,world! \</p>
-            <p>こんにちは、世界！</p>
+        <span class="code__text" id="codeText">
+            #set text(lang:"ja", font: "MS Mincho")
+            Hello,world! \
+            こんにちは、世界！
         </span>
     </div>
 
@@ -122,6 +124,9 @@
 
 参考にさせていただいたサイト
 <a href="https://qiita.com/denkiuo604/items/21e8758ab160bf895e34">Typstの環境構築 Windows編</a>
+
+<script async type="module" src="style.js"></script>
 </body>
 
 </main>
+
