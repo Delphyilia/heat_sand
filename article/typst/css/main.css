@@ -21,10 +21,10 @@ h2 {
     font-size: 16px;
     line-height: 1.5;
     margin: 0; /* 行間の余白をゼロに */
-
-    p {
-        margin: 0; /* 個々の行の余白をゼロに */
-    }
+    
+    white-space: pre-wrap;
+    display: block;
+    
 }
 
 

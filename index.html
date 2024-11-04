@@ -3,125 +3,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>typstの記法紹介</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="page-header__content">
-            <span class="page-header__text">熱砂のプログラミング日記</span>
-        </div>
-    </header>
-<div>
-<p>typstという新しい組版ソフトウェアがあります。LaTexというのもありますが、あちらは歴史が長く、その分どの派生の何の関数を使用したらよいかわからなくなったりします。</p>
-<p>typstはそのあたりシンプルにできているので、新規にLaTexを学ぶぐらいならtypstの記法に慣れましょう。</p>
-
-<p>typstの導入等は完了しているから、記法だけしりたいよ～という方は<a href="./syntax_guide.html">こちら</a>。</p>
-
-<p>なお、この記事はwindows使用者が読むことを想定しています。</p>
-</div>
-
-
-<div>
-    <h2>導入</h2>
-    スタートボタンにcmdと入力すると、コマンドプロンプトが開きます。
-    コマンドプロンプトで次のコマンドを入力し、実行します。
-    <div class="code__content">
-        <span class="code__text">install --id Typst.Typst</span>
-    </div>
-    完了したら、インストールされているか確認のためtypst -Vを実行しましょう。
-    これを書いている時点（20241102）では以下のようにバージョンが表示されます。
-    <div class="code__content">
-    <span class="code__text">
-        <p>C:\Users\might>typst -V</p>
-        <p>0.11.1 (50115102)</p>
-    </span>
+    <div class="article">
+        <a href="article/typst/html/typst_top.html">typstのトップ</a>
     </div>
 
-</div>
-
-
-<div>
-    <h2>下準備</h2>
-    筆者はエディタに<a href="https://code.visualstudio.com/">vscode</a>を使用しています。
-    vscodeをインストールしたら、左端の拡張機能のボタン（画像の上から4番目）をクリックし、typstと入力して検索をかけましょう。
-    <figure>
-        <img src="image/左端メニュー表.png" alt="左端のメニュー表">
-        <figcaption>左端のメニュー表</figcaption>
-    </figure>
-
-    「Typst LSP」と「Tinymist Typst」の2個をインストールしましょう。
-
-    <figure>
-        <img src="image/typst拡張機能.png" alt="拡張機能">
-        <figcaption>typstの拡張機能</figcaption>
-    </figure>
-
-    これで下準備は整いました。
-</div>
-
-<div>
-    <h2>動作確認</h2>
-    では、動作を確認するためにHello Worldを書いていきましょう。
-    デスクトップに（どこでもよいですが）「hello.typ」というファイルを作りましょう。
-    vscodeで開き、次のように入力してみましょう。
-    
-    <div class="code__content">
-        <p>Hello,world!</p>
-        <p>こんにちは、世界！</p>
-    </div>
-
-    入力できたら、画面右上のPDFと表示されたボタンをクリックしましょう。
-    
-    <figure>
-        <img src="image/hello_typ.png" alt="PDFボタン">
-        <figcaption>右上に小さなボタンがある</figcaption>
-    </figure>
-
-    押しましたか？ボタンを押すと作成した文章がPDFにコンパイルされ表示します。
-
-    <figure>
-        <img src="image/hello_pdf.png" alt="hello.pdf">
-        <figcaption>PDF化した</figcaption>
-    </figure>
-
-    ところで、hello.typには2行の文章を書いたはずなのにhello.pdfでは1行になっていますね。
-    これを回避するには、hello.typで改行を明示する必要があります。改行したい部分に「\」を書いておきます。
-    また、通常、日本語の文章には明朝体を使用したいことが多いはずです。なので、使用する言語とそのフォントも指定しましょう。
-    指定するには、文章の冒頭に「#set text(lang:"ja", font: "MS Mincho")」と記載しておきます。
-
-    以上をまとめると、hello.typには次のように記述します。
-
-    <div class="code__content">
-        <span class="code__text">
-            <p>#set text(lang:"ja", font: "MS Mincho")</p>
-            <p>Hello,world! \</p>
-            <p>こんにちは、世界！</p>
-        </span>
-    </div>
-
-    先程と同様に右上のPDFボタンをクリックし、PDFとして出力します。
-
-    <figure>
-        <img src="image/hello_pdf2.png" alt="hello.pdf">
-        <figcaption>hello.pdf</figcaption>
-    </figure>
-
-    フォントが明朝体になり、きちんと改行されていることが確認できましたか？
-
-</div>
-
-<div>
-    <h2>終わりに</h2>
-    簡単ではありましたが、以上で紹介を終わります！
-    typstは生まれたてなので日本語記事が少なく、検索もかけにくいですが、便利なものであるので、使いこなしていきましょう!
-
-    また、今回紹介した「#set」などの機能は<a href="./syntax_guide.html">このページ</a>にまとめています。
-    レポートを書くのに役立ちそうな機能を中心にまとめていますので、こちらも併せてお読みください！
-</div>
-
-参考にさせていただいたサイト
-<a href="https://qiita.com/denkiuo604/items/21e8758ab160bf895e34">Typstの環境構築 Windows編</a>
 </body>
 
 </main>
+
