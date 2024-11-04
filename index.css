@@ -1,0 +1,21 @@
+body {
+    background-color: #fff7cc;
+    background-image: url(topPageBack.jpg);
+    background-size: cover;
+}
+
+/*
+.img-top img{
+    width:100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+*/
+
+.article {
+    font-size: 30pt;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
